@@ -1,5 +1,5 @@
 CPP=clang++
-CPPFLAGS=-std=c++11 -stdlib=libstdc++ -g
+CPPFLAGS=-std=c++11 -g
 
 rational: rational.execute
 	
@@ -7,7 +7,7 @@ rational.clean:
 	rm -rf Rational
 
 rational.build: rational.clean
-	$(CPP) $(CPPFLAGS) Rational.cpp -o Rational
+	$(CPP) $(CPPFLAGS) rational/Rational.cpp -o Rational
 
 rational.execute: rational.build
 	./Rational
@@ -18,7 +18,7 @@ maze.clean:
 	rm -rf Maze
 
 maze.build: maze.clean
-	$(CPP) $(CPPFLAGS) Maze.cpp Map.cpp Render.cpp Structures.cpp -o Maze
+	$(CPP) $(CPPFLAGS) maze/Maze.cpp maze/Map.cpp maze/Render.cpp maze/Structures.cpp -o Maze
 
 maze.execute: maze.build
 	./Maze
