@@ -22,3 +22,27 @@ maze.build: maze.clean
 
 maze.execute: maze.build
 	./Maze
+
+questions.clean:
+	rm -rf tournament/*.class
+
+questions.build: questions.clean
+	javac tournament/*.java
+
+question1: questions.build
+	java -cp tournament QuestionOne
+
+question2: questions.build
+	java -cp tournament QuestionTwo
+
+question3: questions.build
+	java -cp tournament QuestionThree
+
+question4: questions.build
+	java -cp tournament QuestionFour
+
+question5: questions.build
+	java -cp tournament QuestionFive
+
+question6: questions.build
+	java -cp tournament QuestionSix
