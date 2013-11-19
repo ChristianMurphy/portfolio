@@ -5,9 +5,9 @@ a portfolio of sample code
 
 ###prerequisites
 A Unix base operating system (Linux or Mac)<br>
-Make<br>
-Clang c++ compiler (alternatively g++ can be used)<br>
-Java Developement Kit 7 (code tested with open jdk 7)
+[Make] (http://www.gnu.org/software/make/)<br>
+[Clang] (http://clang.llvm.org/) c++ compiler (alternatively g++ can be used)<br>
+[Java Developement Kit 7] (http://openjdk.java.net/) (code tested with open jdk 7)
 
 ###rational program
 impliments a rational datatype in C++.<br>
